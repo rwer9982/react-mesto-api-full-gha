@@ -1,0 +1,26 @@
+.edit-avatar-form__input {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    width: 358px;
+    height: 27px;
+    margin-top: 46px;
+    margin-left: 36px;
+    border: none;
+    outline:none;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    
+}
+
+@media screen and (max-width: 597px) {
+    .edit-avatar-form__input {
+        margin-left: 22px;
+        width: 238px;
+    }
+}
+
+@media screen and (max-width: 597px) {
+    .edit-avatar-form__input {
+        margin-top: 54px;
+    }
+}

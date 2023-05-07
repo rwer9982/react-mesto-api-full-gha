@@ -1,0 +1,27 @@
+.submit-form__close-button {
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    object-fit: cover;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(../../../images/CloseIcon.png);
+    position: absolute;
+    margin-left: 438px;
+    margin-top: -40px;
+}
+
+.submit-form__close-button:hover {
+    cursor: pointer;
+    opacity: 60%;
+}
+
+@media screen and (max-width: 597px) {
+    .submit-form__close-button {
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        margin-left: 262px;
+        margin-top: -35px;
+    }
+}

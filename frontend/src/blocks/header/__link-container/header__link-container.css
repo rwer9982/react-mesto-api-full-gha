@@ -1,0 +1,7 @@
+.header__link-container {
+    margin-left: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}

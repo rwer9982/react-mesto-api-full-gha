@@ -1,0 +1,13 @@
+.profile__img-pen {
+    width: 10px;
+    height: 10px;
+}
+
+@media screen and (max-width: 750px) {
+    .profile__img-pen {
+        height: 7px;
+        width: 7px;
+        margin-bottom: 5px;
+        margin-right: 2px;
+    }
+}

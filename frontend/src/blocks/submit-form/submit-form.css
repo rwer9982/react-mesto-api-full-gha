@@ -1,0 +1,16 @@
+.submit-form {
+    width: 430px;
+    height: 181px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 597px) {
+    .submit-form {
+        width: 282px;
+    }
+}

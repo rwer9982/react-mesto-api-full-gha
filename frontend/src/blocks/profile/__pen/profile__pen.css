@@ -1,0 +1,12 @@
+.profile__pen {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    margin: 47px;
+    background-image: url(../../../images/Vector1.png);
+    z-index: 0;
+}
+
+.profile__pen:hover {
+    z-index: 0;
+}

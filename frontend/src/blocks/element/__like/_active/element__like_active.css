@@ -1,0 +1,15 @@
+.element__like_active {
+    padding: 0;
+    margin: auto;
+    display: block;
+    border: none;
+    background-color: white;
+    width: 22px;
+    height: 19px;
+    background-image: url(./../../../../images/like_active.png);
+}
+
+.element__like_active:hover {
+    opacity: 50%;
+    cursor: pointer;
+}

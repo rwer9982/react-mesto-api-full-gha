@@ -1,0 +1,39 @@
+.edit-form__span {
+    margin: 0;
+    padding: 0;
+    margin-left: 36px;
+    width: 358px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    color: red;
+    visibility: visible;
+    position: absolute;
+}
+
+@media screen and (max-width: 597px) {
+    .edit-form__span {
+        margin-left: 22px;
+        width: 238px;
+    }
+}
+
+.edit-form__span:first-of-type {
+    margin-top: 129px;
+}
+
+.edit-form__span:last-of-type {
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 597px) {
+    .edit-form__span:first-of-type {
+        margin-top: 140px;
+    }
+}
+
+@media screen and (max-width: 597px) {
+    .edit-form__span:last-of-type {
+        margin-top: 215px;
+    }
+}

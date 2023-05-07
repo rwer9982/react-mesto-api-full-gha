@@ -1,0 +1,9 @@
+.increased-image__image {
+    min-height: 190px;
+}
+
+@media screen and (max-width: 597px) {
+    .increased-image__image {
+        margin-top: 14px;
+    }
+}
