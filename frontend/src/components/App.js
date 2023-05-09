@@ -31,6 +31,7 @@ function App() {
   const [isInfoTooltipOpen, setIsInfoTooltipOpen] = React.useState(false);
   const [checkRegister, setCheckRegister] = React.useState(false);
   const jwt = localStorage.getItem('jwt');
+  //console.log(jwt)
 
   const tokenCheck = () => {
     if (localStorage.getItem('jwt')) {

@@ -5,20 +5,14 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const { errors } = require('celebrate');
-const cookieParser = require('cookie-parser');//
+const cookieParser = require('cookie-parser');
 const routes = require('./routes');
 const { createUser, login } = require('./controllers/users');
 const { joiErrorsCreateUser, joiErrorsLogin } = require('./errors/joiErrors');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { PORT = 3000 } = process.env;
+const { PORT = 3001 } = process.env;
 const app = express();
-
-mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {
-  //  useNewUrlParser: true,
-  //  useCreateIndex: true,
-  //  useFindAndModify: false,
-});
 
 const allowedCors = {
   origin: [
@@ -36,9 +30,16 @@ const allowedCors = {
     'https://api.rwer9982.nomoredomains.monster',
   ],
   credentials: true,
+  maxAge: 600,
 };
 
 app.use(cors(allowedCors));
+
+mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {
+  //  useNewUrlParser: true,
+  //  useCreateIndex: true,
+  //  useFindAndModify: false,
+});
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
