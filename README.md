@@ -10,6 +10,6 @@
 
 IP-адрес: 51.250.9.131
 
-Frontend https://rwer9982.nomoredomains.monster/users
+Frontend https://rwer9982.nomoredomains.monster
 
-Backend https://api.rwer9982.nomoredomains.monster/users
+Backend https://api.rwer9982.nomoredomains.monster
