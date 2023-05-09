@@ -77,7 +77,11 @@ const updateUserAvatar = (req, res, next) => {
     .orFail(() => new NotFoundError('Пользователь не существует'))
     .then((user) => res.status(STATUS_OK).send(user))
     .catch((err) => {
-      next(err);
+      if (err.name === 'ValidationError') {
+        next(new ValidationError('Некорректный данные'));
+      } else {
+        next(err);
+      }
     });
 };
 

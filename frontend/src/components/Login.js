@@ -30,7 +30,8 @@ const Login = ({ handleLogin }) => {
             .then((data) => {
                 if (data) {
                     setFormValue({ username: '', password: '' });
-                    localStorage.setItem('jwt', data);
+                    localStorage.setItem('jwt', data.token);
+                    console.log(data.token)
                     localStorage.setItem('username', formValue.username);
                     handleLogin();
                     navigate('/', { replace: true });
