@@ -8,7 +8,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 51.250.9.131
+IP-адрес: 51.250.9.131
 
 Frontend https://rwer9982.nomoredomains.monster/users
 
