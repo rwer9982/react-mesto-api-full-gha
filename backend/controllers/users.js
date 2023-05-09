@@ -65,8 +65,6 @@ const updateUserInfo = (req, res, next) => {
     .catch((err) => {
       if (err.name === 'ValidationError') {
         next(new ValidationError('Некорректный данные'));
-      } else if (err.statusCode === 404) {
-        next(new NotFoundError('Пользователь с указанным id не существует'));
       } else {
         next(err);
       }
